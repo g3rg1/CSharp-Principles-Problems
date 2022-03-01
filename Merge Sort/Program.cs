@@ -21,70 +21,93 @@ namespace Merge_Sort
             }
             return arr;
         }
-        public static void Merge(int[] arr, int l, int m, int r)
+        public static int[] MergeSorter(int[] array)
         {
-            int n1 = m - l + 1;
-            int n2 = r - m;
+            int[] left;
+            int[] right;
+            int[] result = new int[array.Length];
 
-            int[] arrL = new int[n1];
-            int[] arrR = new int[n2];
-            int i, j;
-            for (i = 0; i < n1; i++)
+            if (array.Length <= 1)
             {
-                arrL[i] = arr[l + i];
+                return array;
             }
-            for (j = 0; j < n2; j++)
+            int midPoint = array.Length / 2;
+
+            left = new int[midPoint];
+
+            if (array.Length % 2 == 0)
             {
-                arrR[i] = arr[m + 1 + j];
+
+                right = new int[midPoint];
             }
-            i = 0;
-            j = 0;
-            int k = l;
-            while (i < n1 && j < n2)
+            else
             {
-                if (arrL[i] <= arrR[j])
-                {
-                    arr[k] = arrL[i];
-                    i++;
-                }
-                else
-                {
-                    arr[k] = arrR[j];
-                    j++;
-                }
-                k++;
+                right = new int[midPoint + 1];
             }
-            while (i < n1)
+
+            for (int i = 0; i < midPoint; i++)
             {
-                arr[k] = arrL[i];
-                i++;
-                k++;
+                left[i] = array[i];
             }
-            while (j < n2)
+
+            int x = 0;
+            
+            for (int i = midPoint; i < array.Length; i++)
             {
-                arr[k] = arrR[j];
-                j++;
-                k++;
+                right[x] = array[i];
+                x++;
             }
+
+            left = MergeSorter(left);
+            right = MergeSorter(right);
+            result = merge(left, right);
+
+            return result;
         }
-        public static void Sort(int[] arr, int l, int r)
+        public static int[] merge(int[] left, int[] right)
         {
-            if (r < l)
+            int resultLength = right.Length + left.Length;
+            int[] result = new int[resultLength];
+            int indexLeft = 0, indexRight = 0, indexResult = 0;
+
+            while (indexLeft < left.Length || indexRight < right.Length)
             {
-                int m = l + (r - 1) / 2;
-                Sort(arr, l, m);
-                Sort(arr, m + 1, r);
-                Merge(arr, l, m, r);
+                if (indexLeft < left.Length && indexRight < right.Length)
+                {
+                    if (left[indexLeft] <= right[indexRight])
+                    {
+                        result[indexResult] = left[indexLeft];
+                        indexLeft++;
+                        indexResult++;
+                    }
+                    else
+                    {
+                        result[indexResult] = right[indexRight];
+                        indexRight++;
+                        indexResult++;
+                    }
+                }
+                else if (indexLeft < left.Length)
+                {
+                    result[indexResult] = left[indexLeft];
+                    indexLeft++;
+                    indexResult++;
+                }
+                else if (indexRight < right.Length)
+                {
+                    result[indexResult] = right[indexRight];
+                    indexRight++;
+                    indexResult++;
+                }
             }
+            return result;
         }
         static void Main(string[] args)
         {
             int[] arr = GenSortedArray();
-            PrintArr(arr);
             int[] mixedArr = MixArray(arr);
-            PrintArr(mixedArr);
-            Sort(mixedArr, 0, mixedArr.Length - 1);
-            PrintArr(mixedArr);
+            int[] sortedArr = MergeSorter(mixedArr);
+            PrintArr(sortedArr);
         }
     }
 }
