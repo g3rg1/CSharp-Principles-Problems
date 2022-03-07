@@ -3,9 +3,9 @@ using System;
 
 namespace Merge_Sort
 {
-    class MergeSort : BinarySearcher
+     public class MergeSort : BinarySearcher
     {
-        static int[] MixArray(int[] arr)
+        public static int[] MixArray(int[] arr)
         {
             int currentIndex = arr.Length;
             int currentValue;
