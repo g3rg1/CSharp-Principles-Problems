@@ -46,24 +46,24 @@ namespace Merge_Sort
             }
 
             for (int i = 0; i < midPoint; i++)
-            {
+                {
                 left[i] = array[i];
-            }
+                }
 
             int x = 0;
             
             for (int i = midPoint; i < array.Length; i++)
-            {
+                {
                 right[x] = array[i];
                 x++;
-            }
+                }
 
             left = MergeSorter(left);
             right = MergeSorter(right);
             result = merge(left, right);
 
             return result;
-        }
+            }
         public static int[] merge(int[] left, int[] right)
         {
             int resultLength = right.Length + left.Length;
@@ -75,26 +75,26 @@ namespace Merge_Sort
                 if (indexLeft < left.Length && indexRight < right.Length)
                 {
                     if (left[indexLeft] <= right[indexRight])
-                    {
+            {
                         result[indexResult] = left[indexLeft];
                         indexLeft++;
                         indexResult++;
-                    }
+            }
                     else
-                    {
+            {
                         result[indexResult] = right[indexRight];
                         indexRight++;
                         indexResult++;
-                    }
-                }
+            }
+        }
                 else if (indexLeft < left.Length)
-                {
+        {
                     result[indexResult] = left[indexLeft];
                     indexLeft++;
                     indexResult++;
                 }
                 else if (indexRight < right.Length)
-                {
+            {
                     result[indexResult] = right[indexRight];
                     indexRight++;
                     indexResult++;
@@ -105,6 +105,7 @@ namespace Merge_Sort
         static void Main(string[] args)
         {
             int[] arr = GenSortedArray();
+            PrintArr(arr);
             int[] mixedArr = MixArray(arr);
             int[] sortedArr = MergeSorter(mixedArr);
             PrintArr(sortedArr);
