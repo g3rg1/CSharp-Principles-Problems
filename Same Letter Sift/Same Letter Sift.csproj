@@ -3,11 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>Binary_Search</RootNamespace>
+    <RootNamespace>Same_Letter_Sift</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Lorem.NET" Version="1.0.6" />
-  </ItemGroup>
 
 </Project>

@@ -6,4 +6,8 @@
     <RootNamespace>Selection_Sort</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Lorem.NET" Version="1.0.6" />
+  </ItemGroup>
+
 </Project>
