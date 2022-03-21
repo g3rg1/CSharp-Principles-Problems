@@ -89,7 +89,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTML Extract Text", "HTML E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12. Exeption Handling", "12. Exeption Handling", "{589756CB-AB27-44F5-B4F5-0AFE990FEB42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number Exeption", "Number Exeption\Number Exeption.csproj", "{2DA6390A-D917-4548-BA56-6EF176B75ADF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Number Exeption", "Number Exeption\Number Exeption.csproj", "{2DA6390A-D917-4548-BA56-6EF176B75ADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number Range Exeption", "Number Range Exeption\Number Range Exeption.csproj", "{029FC7B6-076C-47A5-82E6-56BD05130679}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -245,6 +247,10 @@ Global
 		{2DA6390A-D917-4548-BA56-6EF176B75ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DA6390A-D917-4548-BA56-6EF176B75ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DA6390A-D917-4548-BA56-6EF176B75ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029FC7B6-076C-47A5-82E6-56BD05130679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029FC7B6-076C-47A5-82E6-56BD05130679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029FC7B6-076C-47A5-82E6-56BD05130679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029FC7B6-076C-47A5-82E6-56BD05130679}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -288,6 +294,7 @@ Global
 		{DE331601-432C-4A38-892F-1A84227AF406} = {59C1D3B0-8C30-4E91-A00F-967CAD8F1D14}
 		{D8CADEA2-DCD2-45F9-99FB-9F719F5EBD07} = {59C1D3B0-8C30-4E91-A00F-967CAD8F1D14}
 		{2DA6390A-D917-4548-BA56-6EF176B75ADF} = {589756CB-AB27-44F5-B4F5-0AFE990FEB42}
+		{029FC7B6-076C-47A5-82E6-56BD05130679} = {589756CB-AB27-44F5-B4F5-0AFE990FEB42}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D32BE53-C73D-4765-A82D-FE4E0CF3F4F5}
