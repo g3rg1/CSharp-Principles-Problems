@@ -93,9 +93,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Number Exeption", "Number E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Number Range Exeption", "Number Range Exeption\Number Range Exeption.csproj", "{029FC7B6-076C-47A5-82E6-56BD05130679}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Read File Name", "Read File Name\Read File Name.csproj", "{69F5078B-DFC7-46A0-AA5C-0F35A5853176}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Read File Name", "Read File Name\Read File Name.csproj", "{69F5078B-DFC7-46A0-AA5C-0F35A5853176}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Read BIN File", "Read BIN File\Read BIN File.csproj", "{9A32F0F8-AAC4-4056-8108-2486A7194B90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Read BIN File", "Read BIN File\Read BIN File.csproj", "{9A32F0F8-AAC4-4056-8108-2486A7194B90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parse From File", "Parse From File\Parse From File.csproj", "{A47FC9AE-0145-4127-8B5E-753A65E9593E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -263,6 +265,10 @@ Global
 		{9A32F0F8-AAC4-4056-8108-2486A7194B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A32F0F8-AAC4-4056-8108-2486A7194B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A32F0F8-AAC4-4056-8108-2486A7194B90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A47FC9AE-0145-4127-8B5E-753A65E9593E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47FC9AE-0145-4127-8B5E-753A65E9593E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47FC9AE-0145-4127-8B5E-753A65E9593E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47FC9AE-0145-4127-8B5E-753A65E9593E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -309,6 +315,7 @@ Global
 		{029FC7B6-076C-47A5-82E6-56BD05130679} = {589756CB-AB27-44F5-B4F5-0AFE990FEB42}
 		{69F5078B-DFC7-46A0-AA5C-0F35A5853176} = {589756CB-AB27-44F5-B4F5-0AFE990FEB42}
 		{9A32F0F8-AAC4-4056-8108-2486A7194B90} = {589756CB-AB27-44F5-B4F5-0AFE990FEB42}
+		{A47FC9AE-0145-4127-8B5E-753A65E9593E} = {589756CB-AB27-44F5-B4F5-0AFE990FEB42}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D32BE53-C73D-4765-A82D-FE4E0CF3F4F5}
