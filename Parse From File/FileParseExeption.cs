@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Read_File_Name
 {
@@ -11,6 +7,26 @@ namespace Read_File_Name
         private string fileName;
         private int row;
 
-        FileParseExeption()
+        public FileParseExeption(string message, string fileName, int row)
+            : base(message)
+        {
+            this.fileName = fileName;
+            this.row = row;
+        }
+
+        public FileParseExeption(string message, Exception inner, string fileName, int row)
+            : base(message, inner)
+        {
+            this.fileName = fileName;
+            this.row = row;
+        }
+        public string FileName 
+        { 
+            get => fileName;
+        }
+        public int Row
+        {
+            get => row;
+        }
     }
 }

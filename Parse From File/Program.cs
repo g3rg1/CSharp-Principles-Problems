@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Read_File_Name;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -6,7 +7,7 @@ namespace Parse_From_File
 {
     class Program
     {
-        static double[] ParseFromFile(string path)
+        static List<double> ParseFromFile(string path)
         {
             var nums = new List<double>();
 
@@ -14,28 +15,44 @@ namespace Parse_From_File
             {
                 using (StreamReader reader = File.OpenText(path))
                 {
-                    while (reader.ReadLine() != null)
+
+                    double value;
+                    int lineIndex = 0;
+                    while (true)
                     {
                         var line = reader.ReadLine();
+                        if(line == null)
+                        {
+                            break;
+                        }
+                        lineIndex++;
                         var strings = line.Split(' ');
                         foreach (var num in strings)
                         {
-                            nums.Add(double.Parse(num));
+                            if(double.TryParse(num, out value))
+                            {
+                                nums.Add(value);
+                            }
+                            else
+                            {
+                                throw new FileParseExeption("Failed to parse from file.", path, lineIndex);
+                            }
                         }
                     }
                 }
             }
-            catch (Exception)
+            catch (FileParseExeption ex)
             {
-
-                throw;
+                //nums.Clear();
+                Console.WriteLine($"{ex.Message} File name: {ex.FileName}, at line {ex.Row}");
             }
-
+            return nums;
         }
         static void Main(string[] args)
         {
             var path = @"FileToParse.txt";
-
+            var nums = ParseFromFile(path);
+            Console.WriteLine(string.Join(" ", nums));
         }
     }
 }
