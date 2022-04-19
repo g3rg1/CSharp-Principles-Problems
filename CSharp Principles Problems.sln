@@ -115,13 +115,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concat_Two_files", "Concat_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enumerate_Rows", "Enumerate_Rows\Enumerate_Rows.csproj", "{E49A4A6A-8738-4195-95D9-EC11B74CC7E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compare_Rows", "Compare_Rows\Compare_Rows.csproj", "{8F808268-6A34-4A4F-870E-8DF8CEC217F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compare_Rows", "Compare_Rows\Compare_Rows.csproj", "{8F808268-6A34-4A4F-870E-8DF8CEC217F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Submatrix_From_File", "Submatrix_From_File\Submatrix_From_File.csproj", "{BDF72A8B-8067-4CCB-B79A-C56406D3D1A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Submatrix_From_File", "Submatrix_From_File\Submatrix_From_File.csproj", "{BDF72A8B-8067-4CCB-B79A-C56406D3D1A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort_Names_From_File", "Sort_Names_From_File\Sort_Names_From_File.csproj", "{03CC5868-4166-481B-9B33-091AD3D36E7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sort_Names_From_File", "Sort_Names_From_File\Sort_Names_From_File.csproj", "{03CC5868-4166-481B-9B33-091AD3D36E7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Replace_Substring_In_File", "Replace_Substring_In_File\Replace_Substring_In_File.csproj", "{A0909E88-BB42-435D-84CD-B07CE0F80164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Replace_Substring_In_File", "Replace_Substring_In_File\Replace_Substring_In_File.csproj", "{A0909E88-BB42-435D-84CD-B07CE0F80164}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Remove_Odd_Rows", "Remove_Odd_Rows\Remove_Odd_Rows.csproj", "{B785B9CB-0516-4574-AC1C-30778302ADA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML_Extract", "XML_Extract\XML_Extract.csproj", "{E6947B9B-3637-45BF-9D03-3912838B38DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -333,6 +337,14 @@ Global
 		{A0909E88-BB42-435D-84CD-B07CE0F80164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0909E88-BB42-435D-84CD-B07CE0F80164}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0909E88-BB42-435D-84CD-B07CE0F80164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B785B9CB-0516-4574-AC1C-30778302ADA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B785B9CB-0516-4574-AC1C-30778302ADA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B785B9CB-0516-4574-AC1C-30778302ADA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B785B9CB-0516-4574-AC1C-30778302ADA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6947B9B-3637-45BF-9D03-3912838B38DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6947B9B-3637-45BF-9D03-3912838B38DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6947B9B-3637-45BF-9D03-3912838B38DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6947B9B-3637-45BF-9D03-3912838B38DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -390,6 +402,8 @@ Global
 		{BDF72A8B-8067-4CCB-B79A-C56406D3D1A6} = {76666430-E593-4CD6-8673-A95CFC11659F}
 		{03CC5868-4166-481B-9B33-091AD3D36E7B} = {76666430-E593-4CD6-8673-A95CFC11659F}
 		{A0909E88-BB42-435D-84CD-B07CE0F80164} = {76666430-E593-4CD6-8673-A95CFC11659F}
+		{B785B9CB-0516-4574-AC1C-30778302ADA1} = {76666430-E593-4CD6-8673-A95CFC11659F}
+		{E6947B9B-3637-45BF-9D03-3912838B38DA} = {76666430-E593-4CD6-8673-A95CFC11659F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D32BE53-C73D-4765-A82D-FE4E0CF3F4F5}
