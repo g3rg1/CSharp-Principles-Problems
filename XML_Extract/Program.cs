@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 
 namespace XML_Extract
@@ -29,27 +30,20 @@ namespace XML_Extract
         static void Main(string[] args)
         {
             var filePath = @"..\..\..\XMLFile.xml";
+            var rx = new Regex(@"(?<=\>)(.*?)(?=\<)");
+            var extractedText = new List<string>();
 
             //GenXMLData(filePath);
-            var extractedText = new List<string>();
 
             using (var sr = new StreamReader(filePath))
             {
                 var line = "";
                 while ((line = sr.ReadLine()) != null)
                 {
-                    int currentLenIndex = 0;
-                    int start = 0;
-                    int stop = 0;
-                    while (line.Length <= currentLenIndex)
+                    var matches = rx.Matches(line);
+                    foreach (var match in matches)
                     {
-
-                        start = line.IndexOf('>', currentLenIndex);
-                        stop = line.IndexOf('<', start);
-                        var len = stop - (start + 1);
-                        currentLenIndex += stop;
-                        var currentString = line.Substring(start, len);
-                        extractedText.Add(currentString);
+                        extractedText.Add(match.ToString());
                     }
                 }
             }
