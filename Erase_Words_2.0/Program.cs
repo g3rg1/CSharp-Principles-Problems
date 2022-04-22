@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
 using LoremNET;
+
 namespace Erase_Words_2._0
 {
     class Program
@@ -73,6 +73,7 @@ namespace Erase_Words_2._0
                                     wordCount[words[i]]++;
                                 }
                             }
+
                             sw.WriteLine(line);
                         }
                     }
@@ -91,10 +92,10 @@ namespace Erase_Words_2._0
                 File.Copy(tempFilePath, textFilePath, true);
                 File.Delete(tempFilePath);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                Console.WriteLine("Oops, something went wrong.");
+                Console.WriteLine(ex.Message);
             }
         }
     }
