@@ -107,7 +107,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9. Methods", "9. Methods", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.csproj", "{F1A9666C-7E6C-4B7B-AD23-DE736FD5B054}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. Text Files", "10. Text Files", "{76666430-E593-4CD6-8673-A95CFC11659F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "15. Text Files", "15. Text Files", "{76666430-E593-4CD6-8673-A95CFC11659F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextFile_Read_Odd_Rows", "TextFile_Read_Odd_Rows\TextFile_Read_Odd_Rows.csproj", "{98928928-6C9B-4F3D-AD45-DB69632A6AA4}"
 EndProject
@@ -129,7 +129,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XML_Extract", "XML_Extract\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Erase_Words", "Erase_Words\Erase_Words.csproj", "{1A203607-E5F0-4887-AF25-0C10847F3638}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erase_Words_2.0", "Erase_Words_2.0\Erase_Words_2.0.csproj", "{628DD7FA-4A26-4B1C-99F8-76870A725618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Erase_Words_2.0", "Erase_Words_2.0\Erase_Words_2.0.csproj", "{628DD7FA-4A26-4B1C-99F8-76870A725618}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
